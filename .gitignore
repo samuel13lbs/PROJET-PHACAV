@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual Environment
+.venv/
+.env
+
+# IDE
+.idea/
+
+# Project specific
+private/

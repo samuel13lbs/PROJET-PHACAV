@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "phacav"
+version = "0.1.0"
+description = "Planète Habitable Au Climat Analogue Virtuel"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "noise",
+    "pytest",
+    "matplotlib (<3.10)",
+    "requests (>=2.32.4,<3.0.0)",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "."
+]
