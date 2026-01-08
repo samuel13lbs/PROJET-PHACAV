@@ -2,16 +2,16 @@
 
 Ce module permet de récupérer les données d'exoplanètes depuis la **NASA Exoplanet Archive** via le service TAP (Table Access Protocol).
 
-## 🌟 Fonctionnalités
+##  Fonctionnalités
 
-- ✅ Récupération de données pour une ou plusieurs exoplanètes
-- ✅ Données complètes sur les planètes ET leurs étoiles hôtes
-- ✅ Filtrage des candidats en zone habitable
-- ✅ Export en JSON et CSV
-- ✅ Gestion des erreurs et validation des données
-- ✅ Interface simple et intuitive
+-  Récupération de données pour une ou plusieurs exoplanètes
+-  Données complètes sur les planètes ET leurs étoiles hôtes
+-  Filtrage des candidats en zone habitable
+-  Export en JSON et CSV
+-  Gestion des erreurs et validation des données
+-  Interface simple et intuitive
 
-## 📊 Données Récupérées
+##  Données Récupérées
 
 ### Données Planétaires
 - Nom de la planète
@@ -36,7 +36,7 @@ Ce module permet de récupérer les données d'exoplanètes depuis la **NASA Exo
 - Métallicité [Fe/H]
 - Nombre d'étoiles et de planètes dans le système
 
-## 🚀 Utilisation
+##  Utilisation
 
 ### Installation des dépendances
 
@@ -97,7 +97,7 @@ all_planets = fetcher.fetch_confirmed_planets()
 sample = fetcher.fetch_confirmed_planets(limit=100)
 ```
 
-## 📝 Script d'Exemple Complet
+##  Script d'Exemple Complet
 
 Un script d'exemple complet est disponible dans `examples/fetch_exoplanet_data.py`:
 
@@ -107,7 +107,7 @@ python examples/fetch_exoplanet_data.py
 
 Ce script démontre toutes les fonctionnalités du module.
 
-## 🔍 Critères de Zone Habitable
+## Critères de Zone Habitable
 
 Le module utilise les critères suivants pour identifier les candidats potentiellement habitables:
 
@@ -117,7 +117,7 @@ Le module utilise les critères suivants pour identifier les candidats potentiel
 
 Ces critères sont approximatifs et basés sur notre compréhension actuelle de l'habitabilité.
 
-## 📁 Format de Sortie
+##  Format de Sortie
 
 ### JSON (planète unique)
 ```json
@@ -158,7 +158,7 @@ Ces critères sont approximatifs et basés sur notre compréhension actuelle de 
 ### CSV
 Format tabulaire avec toutes les colonnes disponibles.
 
-## 🛠️ API Reference
+##  API Reference
 
 ### Classe `ExoplanetFetcher`
 
@@ -206,21 +206,21 @@ Sauvegarde les données au format CSV.
 #### `get_planet_summary(planet_data: Dict) -> str`
 Génère un résumé lisible des données.
 
-## 🌐 Source des Données
+##  Source des Données
 
 Les données proviennent de la **NASA Exoplanet Archive**:
 - URL: https://exoplanetarchive.ipac.caltech.edu/
 - Service: TAP (Table Access Protocol)
 - Table: `ps` (Planetary Systems)
 
-## ⚠️ Notes Importantes
+##  Notes Importantes
 
 1. **Connexion Internet**: Une connexion active est requise
 2. **Timeout**: Les requêtes ont un timeout de 30 secondes
 3. **Données manquantes**: Certaines planètes peuvent avoir des valeurs `null` pour certains paramètres
 4. **Noms exacts**: Les noms de planètes doivent être exacts (sensible à la casse)
 
-## 🔗 Ressources
+##  Ressources
 
 - [NASA Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/)
 - [Documentation TAP](https://exoplanetarchive.ipac.caltech.edu/docs/TAP/usingTAP.html)
